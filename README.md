@@ -1,8 +1,7 @@
 # Info
 Implementation of the swiping we're looking for when switching between teams. Not pretty by default, but it doesn't use any libraries not already in the SDK.
 
-# Links
-<http://android-developers.blogspot.com/2011/08/horizontal-view-swiping-with-viewpager.html>
+Uses ViewPager, which was released as part of the Compatibility Package revision 3 and works with Android 1.6 upwards.
 
-http://github.com - automatic!
-[GitHub](http://github.com)
+# Links
+http://android-developers.blogspot.com/2011/08/horizontal-view-swiping-with-viewpager.html
