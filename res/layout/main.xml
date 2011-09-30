@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#000000">
-<android.support.v4.view.ViewPager
-    android:layout_width="match_parent" 
-    android:layout_height="match_parent" 
-    android:id="@+id/awesomepager"/>
-</LinearLayout>
+    android:layout_height="fill_parent">
+	<LinearLayout
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:padding="5dp">
+    	
+		<FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:background="#0000FF"/>    	
+    	<TabWidget
+            android:id="@android:id/tabs"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+       	<android.support.v4.view.ViewPager
+    		android:layout_width="match_parent" 
+    		android:layout_height="wrap_content" 
+    		android:id="@+id/awesomepager"
+    		android:background="#FF0000"/>
+       	
+        
+	</LinearLayout>
+</TabHost>

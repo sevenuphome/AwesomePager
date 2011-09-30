@@ -29,6 +29,10 @@ public class AwesomePagerActivity extends Activity {
         awesomePager.setAdapter(awesomeAdapter);
     }
     
+    public void onResume(){
+    	
+    }
+    
     private class AwesomePagerAdapter extends PagerAdapter{
 
 		

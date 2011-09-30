@@ -6,14 +6,35 @@
     <uses-sdk android:minSdkVersion="10" />
 
     <application android:icon="@drawable/icon" android:label="@string/app_name">
+        
         <activity android:name=".AwesomePagerActivity"
+        		  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+        <!-- _WATCH_: .TabWidget made things work; previously .AwesomePagerActivity  -->
+        <activity android:name=".TabWidget"
                   android:label="@string/app_name"
                   android:theme="@android:style/Theme.NoTitleBar">
+                  
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        
+        
+        
+        <activity android:name=".RosterActivity" />
+        <activity android:name=".ScheduleActivity" />
+        <activity android:name=".StandingsActivity" />
+        
+       
 
     </application>
 </manifest>
